@@ -38,12 +38,13 @@
   </ul>
 </ul>
 
-<h3></h3>
+<h3>Prototipo</h3>
+<img>
 
 <h3>Integraciones y Derechos de Autor</h3>
 <p>Para la creación de este sistema se han utilizado dos integraciones de Frameworks, agradecimientos a los creadores:</p>
 <ul>
-  <li>Michael Billington <michael.billington@gmail.com></li>
+  <li>Michael Billington: michael.billington@gmail.com</li>
   <li>PHP Framework Interoperability Group: <a href="https://github.com/php-fig/fig-standards">Interoperability Group</a></li>
   <li>PHPMailer – A full-featured email creation and transfer class for PHP: <a href="PHPMailer – A full-featured email creation and transfer class for PHP">PHPMailer</a></li>
 </ul>
