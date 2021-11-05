@@ -39,7 +39,24 @@
 </ul>
 
 <h3>Prototipo</h3>
-<img>
+<section>
+  <article>
+    <p>Inisio de sesión con código único por mesero:</p>
+    <img src="https://github.com/Rodezno3/UNE_space/blob/main/presentacion/1.PNG" style="height: 300px; margin: 35px;">
+    <p>Pantalla de Inicio:</p>
+    <img src="https://github.com/Rodezno3/UNE_space/blob/main/presentacion/2.PNG" style="height: 300px; margin: 35px;">
+    <p>Menú seccionado:</p>
+    <img src="https://github.com/Rodezno3/UNE_space/blob/main/presentacion/3.PNG" style="height: 300px; margin: 35px;">
+  </article>
+  <article>
+    <p>Ingreso pedido de comida:</p>
+    <img src="https://github.com/Rodezno3/UNE_space/blob/main/presentacion/4.PNG" style="height: 300px; margin: 35px;">
+    <p>Inicio en teléfono o tableta:</p>
+    <img src="https://github.com/Rodezno3/UNE_space/blob/main/presentacion/5.PNG" style="height: 300px; margin: 35px;">
+    <p>Ingreso orden de comida en teléfono o tableta:</p>
+    <img src="https://github.com/Rodezno3/UNE_space/blob/main/presentacion/6.PNG" style="height: 300px; margin: 35px;">
+  </article>
+</section>
 
 <h3>Integraciones y Derechos de Autor</h3>
 <p>Para la creación de este sistema se han utilizado dos integraciones de Frameworks, agradecimientos a los creadores:</p>
