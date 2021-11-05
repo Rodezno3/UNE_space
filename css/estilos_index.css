@@ -1,0 +1,125 @@
+@charset "utf-8";    
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 no admite ancho máximo, por lo que el ancho predeterminado es 100%. */
+.ie6 img {
+	width:100%;
+}
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif;
+}
+html,body{
+    margin: 0px;
+    height: 100%;
+}
+/* Diseño Mobile: 480px y menos. */
+
+/* Diseño Tablet: 481px a 768px. Hereda estilos de diseño mobile. */
+@media only screen and (min-width: 481px) {
+    
+}    
+/* Diseño Desktop: 769px a un maximo de 1600px. Hereda estilos de: Diseño mobile y tablet */
+@media only screen and (min-width: 900px) {
+    #cubo{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        background: #fff;
+        border: 2px solid #3339;
+        border-radius: 15px;
+        text-align: center;
+        padding: 15px 35px 25px;
+    }
+    #cubo h1{
+        text-align: center;
+        font-size: 27px;
+        padding: 15px;
+        color: #444;
+    }
+    #cubo_2{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        background: #fff;
+        border: 2px solid #3339;
+        border-radius: 15px;
+        text-align: center;
+        padding: 15px 35px 25px;
+        width: 60%;
+    }
+    #cubo_2 h1{
+        text-align: center;
+        font-size: 27px;
+        padding: 15px;
+        color: #444;
+    }
+    #cubo_2 textarea{
+        padding: 7px;
+        font-size: 17px;
+        width: 80%;
+        height: 150px;
+    }
+    #notate{
+        padding: 12px 15px;
+        font-size: 16px;
+        margin: 25px 0 0 0;
+        background: #fff;
+        border: 1px solid #333;
+        border-radius: 5px;
+    } 
+    #cubo form{}
+    #pin{
+        padding: 5px;
+        margin: 7px 0 14px;
+        font-size: 40px;
+        color: #333;
+        width: 150px;
+        text-align: center;
+    }
+    #pins{
+        padding: 5px;
+        margin: 7px 0 14px;
+        font-size: 40px;
+        color: #333;
+        width: 150px;
+        text-align: center;
+    }
+    #panel{
+        
+    }
+    #panel ul{
+        list-style: none;
+        display: flex;
+    }
+    #panel ul li{
+        padding: 15px;
+        background: #9999;
+        margin: 5px;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        border: 1px solid rgba(0,0,0,0.3);
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    #panel ul:last-child li:first-child{
+        background: red;
+        font-weight: 600;
+        color: #fff;
+    } 
+    #panel ul:last-child li:last-child{
+        background-color: green;
+        color: #fff;
+    }
+}

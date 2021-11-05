@@ -1,0 +1,61 @@
+@charset "utf-8";    
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 no admite ancho máximo, por lo que el ancho predeterminado es 100%. */
+.ie6 img {
+	width:100%;
+}
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+html,body{
+    margin: 0px;
+    height: 100%;
+}
+/* Diseño Mobile: 480px y menos. */
+
+/* Diseño Tablet: 481px a 768px. Hereda estilos de diseño mobile. */
+@media only screen and (min-width: 481px) {
+    
+}     
+/* Diseño Desktop: 769px a un maximo de 1600px. Hereda estilos de: Diseño mobile y tablet */
+@media only screen and (min-width: 900px) {
+    header{
+        width: 100%;
+        height: 10%;
+        box-shadow: 1px 0px 3px rgba(0,0,0,0.3);
+        background: #fff;
+        color: #333;
+    }
+    header ul{
+        display: flex;
+        list-style: none;
+        height: 100%;
+        font-size: 20px;
+        text-align: center;
+    }
+    header ul a{
+        text-decoration: none;
+        flex: 1;
+        color: #333;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid rgba(0,0,0,0.03);
+        font-weight: 600;
+    }
+    header ul img{
+        height: 80px;
+        margin-top: 5px;
+    }
+    header ul a:last-child{
+        background-color: darkred;
+        color: #fff;
+    }
+}

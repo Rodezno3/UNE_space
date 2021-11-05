@@ -1,0 +1,85 @@
+@charset "utf-8";    
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 no admite ancho máximo, por lo que el ancho predeterminado es 100%. */
+.ie6 img {
+	width:100%;
+}
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif;
+}
+html,body{
+    margin: 0px;
+    height: 100%;
+} 
+/* Diseño Mobile: 480px y menos. */
+
+/* Diseño Tablet: 481px a 768px. Hereda estilos de diseño mobile. */
+@media only screen and (min-width: 481px) {
+    
+}    
+/* Diseño Desktop: 769px a un maximo de 1600px. Hereda estilos de: Diseño mobile y tablet */
+@media only screen and (min-width: 900px) {
+    .factura{
+        width: 25%;
+        min-width: 350px;
+        padding: 25px;
+        border-right: 1px solid #555;
+        overflow: auto;
+        height: 100%;
+    }
+    .factura h2{
+        text-align: center;
+        padding: 10px;
+        font-size: 28px;
+        color: #333;
+    }
+    .factura h3{
+        text-align: center;
+        padding-top: 15px;
+        color: #333;
+        font-size: 23px;
+        font-family: monospace;
+        letter-spacing: 2px;
+    }
+    .factura h4{
+        text-align: center;
+        font-size: 16px;
+        padding: 10px 0;
+        color: #333;
+        font-family: monospace;
+        letter-spacing: 0px;
+    }
+    .factura h5{
+        text-align: center;
+        font-size: 20px;
+        padding: 10px 0;
+        color: #333;
+        font-family: monospace;
+    }
+    .f_div{
+        display: flex;
+        justify-content: space-between;
+        padding: 7px 10px;
+    }
+    .factura p{
+        font-family: monospace;
+        padding: 5px 0;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .centrado{
+        text-align: center;
+        display: block;
+        padding: 7px;
+        font-size: 16px;
+        font-family: monospace;
+    }
+}

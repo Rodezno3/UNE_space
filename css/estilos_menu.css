@@ -1,0 +1,210 @@
+@charset "utf-8";    
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 no admite ancho máximo, por lo que el ancho predeterminado es 100%. */
+.ie6 img {
+	width:100%;
+}
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html,body{
+    margin: 0px;
+    height: 100%;
+}
+/* Diseño Mobile: 480px y menos. */
+
+/* Diseño Tablet: 481px a 768px. Hereda estilos de diseño mobile. */
+@media only screen and (min-width: 481px) {
+     
+}    
+/* Diseño Desktop: 769px a un maximo de 1600px. Hereda estilos de: Diseño mobile y tablet */
+@media only screen and (min-width: 900px) {
+    .menu{
+        width: 100%;
+    }
+    .contenedor_cubo{
+        width: 100%;
+        display: flex;
+        padding: 15px 0;
+        flex-wrap: wrap;
+    }  
+    .cubo{
+        height: 110px;
+        width: 160px;
+        border: 1px solid rgba(0,0,0,0.3);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 15px;
+        cursor: pointer;
+    }
+    .cubo_plus{
+        font-size: 65px;
+        font-weight: 600;
+        color: #666;
+    }
+    .cubo img{
+        width: 45px;
+    }
+    .cubo p{
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        color: #333;
+    }
+    .menu_detalle{
+        width: 86%;
+        margin-left: 7%;
+        border: 1px solid rgba(0,0,0,0.3);
+        padding: 15px;
+        margin-bottom: 25px;
+    }
+    .menu_detalle ul{
+        list-style: none;
+    }
+    .menu_detalle ul li{
+        border-bottom: 1px dashed rgba(0,0,0,0.3);
+        padding: 12px 20px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 21px;
+        color: #333;
+    }
+    .menu_detalle ul li:last-child{
+        border: none;
+        justify-content: center;
+    }
+    .menu_detalle ul li button{
+        padding: 7px 14px;
+        border: 1px solid rgba(0,0,0,0.5);
+        color: #444;
+        background: #fff;
+        font-size: 17px;
+        margin: 0 10px;
+        box-shadow: 0px 1px 2px rgba(0,0,0,0.5);
+        cursor: pointer;
+    }
+    .md_info{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
+    .md_boton{
+        width: 40%;
+        display: flex;
+        justify-content: space-around;
+        padding-left: 20px;
+    }
+    /*-- medium --*/
+    .titu_edit{
+        text-align: center;
+        padding-top: 45px;
+        font-size: 35px;
+        color: #333;
+    }
+    .medium{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        padding: 50px;
+        border: 1px solid rgba(0,0,0,0.3);
+        display: flex;
+        align-items: center;
+        width: 550px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .medium label{
+        font-size: 20px;
+        color: #333;
+    }
+    .medium input[type=text]{
+        padding: 7px;
+        text-align: center;
+        font-size: 17px;
+        border: 1px solid rgba(0,0,0,0.3);
+        margin: 7px;
+        background: #fff;
+        color: #333;
+        box-shadow: none;
+    }
+    .medium input{
+        padding: 17px;
+        font-size: 17px;
+        border: 1px solid rgba(0,0,0,0.3);
+        margin: 7px;
+        background: #fff;
+        color: #333;
+        box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+    }
+    #precio{
+        width: 80px;
+    }
+    #caja_uni{
+        width: 300px;
+    }
+    .ingerir{
+        background-color: #fff;
+        color: #333;
+        margin-top: 25px;
+        font-size: 18px;
+    }
+    /*--- nueva orden ---*/
+    .minus{
+        background: red;
+        color: #fff;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        font-size: 35px;
+        cursor: pointer;
+    }
+    .plusle{
+        background: green;
+        color: #fff;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        font-size: 35px;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    .formate{
+        width: 30px;
+        font-size: 25px;
+        text-align: center;
+        color: #333;
+        border: none;
+    }
+    .regre{
+        padding: 17px;
+        color: #333;
+        border: 1px solid rgba(0,0,0,0.3);
+        text-decoration: none;
+        box-shadow: 0px 0px 3px rgba(0,0,0,0.5);
+    }
+    .des_gre{
+        color: forestgreen;
+        margin-right: 25px;
+    }
+    .des_min{
+        font-size: 14px;
+        color: #333;
+    } 
+}

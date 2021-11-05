@@ -1,0 +1,89 @@
+@charset "utf-8";    
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 no admite ancho máximo, por lo que el ancho predeterminado es 100%. */
+.ie6 img {
+	width:100%;
+}
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif;
+}
+html,body{
+    margin: 0px;
+    height: 100%;
+}
+/* Diseño Mobile: 480px y menos. */
+
+/* Diseño Tablet: 481px a 768px. Hereda estilos de diseño mobile. */
+@media only screen and (min-width: 481px) {
+    
+}    
+/* Diseño Desktop: 769px a un maximo de 1600px. Hereda estilos de: Diseño mobile y tablet */
+@media only screen and (min-width: 900px) {
+    #formulario{
+        display: flex;
+        justify-content: center;
+        padding: 25px;
+    }
+    #formulario label{}
+    #search{
+        width: 250px;
+        padding: 7px;
+        font-size: 16px;
+        border: 1px solid rgba(0,0,0,0.3);
+        color: #333;
+        margin-right: 30px;
+    }
+    #mesa{
+        width: 50px;
+        padding: 7px;
+        font-size: 16px;
+        margin-right: 30px;
+        color: #333;
+        border: 1px solid rgba(0,0,0,0.3);
+    }
+    #mesero{
+        padding: 7px;
+        font-size: 16px;
+        margin-right: 30px;
+        color: #333;
+        border: 1px solid rgba(0,0,0,0.3);
+    }
+    #fecha{
+        padding: 7px;
+        font-size: 16px;
+        margin-right: 30px;
+        color: #333;
+        border: 1px solid rgba(0,0,0,0.3);
+    }
+    
+    #tabla{
+        width: 90%;
+        margin-left: 5%;
+    }
+    #tabla tr{
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    #tabla tr td{
+        padding: 7px;
+        font-size: 17px;
+    }
+    .p{
+        width: 50px;
+    }
+    .d{
+        width: 100px;
+    }
+    #thead{
+        background: #333;
+        color: #fff;
+    }
+}

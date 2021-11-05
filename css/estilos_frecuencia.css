@@ -1,0 +1,117 @@
+@charset "utf-8";    
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 no admite ancho máximo, por lo que el ancho predeterminado es 100%. */
+.ie6 img {
+	width:100%;
+}
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+html,body{
+    margin: 0px;
+    height: 100%;
+} 
+/* Diseño Mobile: 480px y menos. */
+
+/* Diseño Tablet: 481px a 768px. Hereda estilos de diseño mobile. */
+@media only screen and (min-width: 481px) {
+    
+}    
+/* Diseño Desktop: 769px a un maximo de 1600px. Hereda estilos de: Diseño mobile y tablet */
+@media only screen and (min-width: 900px) {
+    #seccion{
+        width: 100%;
+        padding: 25px;
+        text-align: center;
+    }
+    #seccion h1{
+        font-size: 33px;
+        color: #333;
+        padding-bottom: 25px;
+    }
+    #f_head{
+    }
+    #f_head input[type=text]{
+        padding: 7px;
+        font-size: 16px;
+        border: 1px solid #333;
+        border-radius: 5px;
+        width: 450px;
+    }
+    #f_head input[type=submit]{
+        padding: 8px 14px;
+        font-size: 16px;
+        border: none;
+        background: #333;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #f_head a{
+        padding: 8px 14px;
+        font-size: 16px;
+        border: none;
+        background: #333;
+        color: #fff;
+        border-radius: 5px;
+        text-decoration: none;
+        margin: 0px 24px;
+    }
+    #ingresar{
+        width: 80%;
+        padding-top: 40px;
+        margin: 0 15%;
+    }
+    #ingresar h3{
+        font-size: 23px;
+        color: #333;
+        padding-bottom: 20px;
+    }
+    #ingresar form{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #ingresar form input{
+        padding: 5px;
+        font-size: 15px;
+        margin: 15px;
+        border-radius: 5px;
+        border: 1px solid #333;
+    }
+    #ingresar form input[type=submit]{
+        position: absolute;
+        margin-top: 75px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 8px 14px;
+        font-size: 16px;
+        border: none;
+        background: #333;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    #tren{
+        widows: 90%;
+        margin: 35px 5%;
+    }
+    table{
+        width: 100%;
+    }
+    table tr td{
+        padding: 7px;
+        background: #fff;
+        border: 1px solid #333;
+    }
+    #thead td{
+        background: #333;
+        padding: 7px;
+        color: #fff;
+    }
+}

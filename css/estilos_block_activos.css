@@ -1,0 +1,96 @@
+@charset "utf-8";    
+img, object, embed, video {
+	max-width: 100%;
+}
+/* IE 6 no admite ancho máximo, por lo que el ancho predeterminado es 100%. */
+.ie6 img {
+	width:100%;
+}
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box; 
+}
+html,body{
+    margin: 0px;
+    height: 100%;
+} 
+/* Diseño Mobile: 480px y menos. */
+
+/* Diseño Tablet: 481px a 768px. Hereda estilos de diseño mobile. */
+@media only screen and (min-width: 481px) {
+    
+}    
+/* Diseño Desktop: 769px a un maximo de 1600px. Hereda estilos de: Diseño mobile y tablet */
+@media only screen and (min-width: 900px) {
+    .inicio{
+        display: flex;
+        height: 90%;
+        position: relative;
+        width: 100%;
+    }
+    .block_activo{
+        height: 100%;
+        overflow: auto;
+        width: 75%;
+    }
+    .block_activo h3{
+        text-align: center;
+        font-size: 25px;
+        padding: 10px 0;
+        color: #333;
+    }
+    .fecha{
+        text-align: center;
+        font-size: 17px;
+    }
+    .contenedor_principal{
+        width: 100%;
+        padding: 25px 10px;
+    }
+    .contenedor_selectivo{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba(0,0,0,0.3);
+        margin: 7px 2.5%;
+        padding: 7px 14px;
+        box-shadow: 2px 0px 3px rgba(0,0,0,0.3);
+    } 
+    .cs_up{
+        display: flex;
+        padding: 0 90px 0 30px;
+    } 
+    .cs_down ul{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        list-style: none;
+    }
+    .cs_up ul{
+        list-style: none;
+        color: #333;
+        width: 100%;
+        font-size: 18px;
+    }
+    .cs_up ul li{
+        line-height: 27px;
+        padding: 5px;
+        display: flex;
+    }
+    .cs_info{
+        flex: 1;
+    }
+    .cs_boton button{
+        padding: 10px 7px;
+        font-size: 15px;
+        margin: 5px 10px;
+        border: 1px solid #3338;
+        background: #fff;
+        font-weight: 600;
+        cursor: pointer;
+        color: #333;
+    }
+}
