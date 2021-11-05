@@ -1,7 +1,7 @@
 <?php
-    $db_host = "localhost";
-    $db_nombre = "xoxoctic_beta";
-    $db_usuario = "root";
+    $db_host = "";
+    $db_nombre = "";
+    $db_usuario = "";
     $db_pass = "";
 
     $conexionb = mysqli_connect($db_host,$db_usuario,$db_pass);
